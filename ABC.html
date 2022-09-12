@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ABC system</title>
+        <link rel="stylesheet" href="abc.css">
+    </head>
+    <body onload="init()">
+        <h1>ABC page, Welcome</h1>
+        <br><br>
+        <br>
+        <form>
+            <table border="border" style="width:100%">
+                    <tr>
+                      <th>Sl No.</th>
+                      <th>Course</th>
+                      <th>Credit</th>
+                      <th>Category</th>
+                    </tr>
+                    <tr id="Sports">
+                      <td>1</td>
+                      <td>C1</td>
+                      <td class="credits">X</td>
+                      <td>Sports</td>
+                    </tr>
+                    <tr id="Education">
+                      <td>2</td>
+                      <td>C2</td>
+                      <td class="credits">Y</td>
+                      <td>Education</td>
+                    </tr>
+                    <tr id="Dance">
+                      <td>3</td>
+                      <td>C3</td>
+                      <td class="credits">Z</td>
+                      <td>Dance</td>
+                    </tr>
+                    <tr id="Music">
+                      <td>4</td>
+                      <td>C4</td>
+                      <td class="credits">A</td>
+                      <td>Music</td>
+                    </tr>
+                    <tr id="Art">
+                      <td>5</td>
+                      <td>C5</td>
+                      <td class="credits">B</td>
+                      <td>Art</td>
+                    </tr>
+                    <tr id="Literary group">
+                      <td>6</td>
+                      <td>C6</td>
+                      <td class="credits">C</td>
+                      <td>Literary group</td>
+                    </tr>
+                    <tr id="Technological field">
+                      <td>7</td>
+                      <td>C7</td>
+                      <td class="credits">D</td>
+                      <td>Technological field</td>
+                    </tr>
+            </table>
+            <br>
+            <br>
+            <p>Suggestion of domain(based on credit): </p>
+            <p>Internships(based on category):</p>
+            <label for="category">Choose a category:</label>
+                <select name="categ" id="categ">
+                <option value="Select_Category">Select Category</option>
+                <option value="Sports">Sports</option>
+                <option value="Education">Education</option>
+                <option value="Dance">Dance</option>
+                <option value="Music">Music</option>
+                <option value="Art">Art</option>
+                <option value="Literary_group">Literary group</option>
+                <option value="Technological_field">Technological field</option>
+                </select>
+                <br>
+        </form>
+        <div id="block"><p>Suggestion of internship(based on category): </p>
+          <div id="Apple" class="Technological_field">
+            Apple
+          </div>
+          <div id="Google" class="Technological_field">
+            Google
+          </div>
+          <div id="IBM">
+            IBM
+          </div>
+          <div id="Microsoft" class="Technological_field">
+            Microsoft
+          </div>
+          <div id="HRX" class="Sports">
+            HRX
+          </div>
+          <div id="Decathlon" class="Sports">
+            Decathlon
+          </div>
+          <div id="ESPN" class="Sports">
+            ESPN
+          </div>
+          <div id="PES" class="Education">
+            PES
+          </div>
+          <div id="IISc" class="Education">
+            IISc
+          </div>
+          <div id="RV" class="Education">
+            RV
+          </div>
+          <div id="Sony Music" class="Music">
+            Sony Music
+          </div>
+          <div id="T" class="Music">
+            T-series
+          </div>
+          <div id="Pie" class="Music">
+            Pewdiepie
+          </div>
+          <div id="Indie" class="Art">
+            Indie Cult
+          </div>
+          <div id="Pinterest" class="Art">
+            Pinterest
+          </div>
+        </div>
+        <script src="ABC.js"></script>
+    </body>
+</html>

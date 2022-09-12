@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            html{
+                color:aliceblue
+            }
+            body{
+                background-image:url('background.jpg');
+                background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url("background.jpg");
+                background-position: center;
+                background-size: cover;
+                font-size: larger;
+                margin-left: 20px;    
+            }
+            h1{
+                text-align : center;
+            }
+            div.options{
+                
+                margin-left: 68px;
+            }
+            div.center{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                
+            }
+
+        </style>
+        <title>Student Feedback</title>
+        <h1>STUDENT FEEDBACK</h1>
+    </head>
+    
+    <body >
+        <div class="center">
+        <br><br><br>
+        <form action="" method="get" style="border:aliceblue; border-width:3px; border-style:inset; margin-right: 300px;margin-left: 300px;">
+            <div style="display : inline">
+                <div class="options"> &nbsp;&ensp;&ensp;1&ensp;&ensp;2&ensp;&ensp;&nbsp;3&ensp;&nbsp;&ensp;4&ensp;&ensp;5</div>
+                <label for="opA">Option A</label>
+                &nbsp;<input type="radio" id="opA" name="val1" value="1">
+                &nbsp;<input type="radio" id="opA" name="val1" value="2">
+                &nbsp;<input type="radio" id="opA" name="val1" value="3">
+                &nbsp;<input type="radio" id="opA" name="val1" value="4">
+                &nbsp;<input type="radio" id="opA" name="val1" value="5">
+                &nbsp;<br>
+                <label for="opB">Option B</label>
+                &nbsp;<input type="radio" id="opB" name="val2" value="1">
+                &nbsp;<input type="radio" id="opB" name="val2" value="2">
+                &nbsp;<input type="radio" id="opB" name="val2" value="3">
+                &nbsp;<input type="radio" id="opB" name="val2" value="4">
+                &nbsp;<input type="radio" id="opB" name="val2" value="5">
+                <br>
+                <label for="opC">Option C</label>
+                &nbsp;<input type="radio" id="opC" name="val3" value="1">
+                &nbsp;<input type="radio" id="opC" name="val3" value="2">
+                &nbsp;<input type="radio" id="opC" name="val3" value="3">
+                &nbsp;<input type="radio" id="opC" name="val3" value="4">
+                &nbsp;<input type="radio" id="opC" name="val3" value="5">
+                <br>
+                <label for="opD">Option D</label>
+                &nbsp;<input type="radio" id="opD" name="val4" value="1">
+                &nbsp;<input type="radio" id="opD" name="val4" value="2">
+                &nbsp;<input type="radio" id="opD" name="val4" value="3">
+                &nbsp;<input type="radio" id="opD" name="val4" value="4">
+                &nbsp;<input type="radio" id="opD" name="val4" value="5">
+                <br>
+                <label for="opE">Option E</label>
+                &nbsp;<input type="radio" id="opE" name="val5" value="1">
+                &nbsp;<input type="radio" id="opE" name="val5" value="2">
+                &nbsp;<input type="radio" id="opE" name="val5" value="3">
+                &nbsp;<input type="radio" id="opE" name="val5" value="4">
+                &nbsp;<input type="radio" id="opE" name="val5" value="5">
+                <br>
+                <label for="opF">Option F</label>
+                &nbsp;<input type="radio" id="opF" name="val6" value="1">
+                &nbsp;<input type="radio" id="opF" name="val6" value="2">
+                &nbsp;<input type="radio" id="opF" name="val6" value="3">
+                &nbsp;<input type="radio" id="opF" name="val6" value="4">
+                &nbsp;<input type="radio" id="opF" name="val6" value="5">
+                <p style="font-size: 10px;">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1:poor&ensp;&ensp;5:amazing</p>
+                <label for="prob">Any other problems:</label><br>
+                <textarea cols="40" rows="3" type="text" id="prob" name="prob" ></textarea>
+                <br><br>
+                <label for="que">Any other queries, please type in:</label><br>
+                <textarea cols="40" rows="3" type="text" id="que" name="que"></textarea>
+            </div>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    </body>
+
+</html>

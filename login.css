@@ -1,3 +1,11 @@
+body {
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url("background.jpg");
+    background-position: center;
+    background-color: black;
+    background-size: cover;
+    color: white;
+}
+
 #h1 {
     text-align: center;
 }
