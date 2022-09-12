@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url("background.jpg");
+    background-position: center;
+    background-color: black;
+    background-size: cover;
+    color: white;
+}
+
+#h1 {
+    text-align: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin:auto;
+    /* justify-content: center; */
+    /* margin-left: 470px;
+    margin-right: 500px; */
+    border-radius: 10px;
+    padding: 30px;
+    
+}
+
+#signup {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    border-radius: 5px;
+    background-color: lightblue;
+}
+
+.submit {
+    margin-right: 90%;
+}
+
+button {
+    border-radius: 5px;
+    background-color: lightblue;
+}

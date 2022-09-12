@@ -1,0 +1,27 @@
+body {
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url("background.jpg");
+    background-position: center;
+    background-size: cover;
+    color:white;
+}
+#H1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: double;
+}
+
+input {
+    border-radius: 5px;
+    background-color: lightblue;
+}
+
+.submit {
+    margin-right: 90%;
+}

@@ -1,0 +1,72 @@
+h1#PES {
+    text-align: center;
+    font-family:'Franklin Gothic Medium';
+}
+
+img.logo {
+    margin: auto;
+    opacity: 0.9;
+    width: 150px;
+    height: 150px;
+}
+
+body  {
+    display: flex;
+    flex-direction: column;
+    background-image: url("Globe.jpg");
+    background-position: center;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(255,255,255,0.7);
+    background-blend-mode:color;
+}
+
+
+.table_0 {
+    font-family:'Franklin Gothic Medium';
+    margin: auto;
+    border: 10px;
+    border-style:outset;
+    text-align: center;
+    border-color: gray;
+    
+}
+
+.table_0 td {
+    border-style:solid;
+    border-color: grey;
+}
+
+.row_0 {
+    font-weight:bold;
+}
+
+.col_0 {
+    width: 200px;
+    font-weight: bold;
+}
+
+.col_1 {
+    width: 180px;
+}
+
+.col_2 {
+    width: 275px;
+}
+
+form {
+    margin: auto;
+    font-weight: bold   ;
+}
+
+#button,#age,#email,#name,#number{
+    border-radius: 5px;
+    width: 400px;
+    border-color: blue;
+}
+
+#button {
+    background-color: aqua ;
+}
+
