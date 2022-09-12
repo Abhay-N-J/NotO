@@ -1,0 +1,113 @@
+<!-- <html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Welcome to Ai1</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+               <img src="static/logo.png">
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="/abc">ABC</a></li>
+                        <li><a href="/forum">Forum</a></li>
+                        <li><a href="/review">Student Review</a></li>
+                        <li><a href="">Contact us</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="text-box">
+                <h1>Welcome to Ai1</h1>
+                <p>A one stop solution for all your Educational needs</p>
+                <a href="">Know more</a>
+            </div>
+        </section>
+
+    </body>
+</html> -->
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Ai1</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+        {% for category,message in messages %}
+            {% if category =='error' %}
+            <div class="alert alert-danger alter-dismissable fade show" role="alert">
+                {{ message }}
+                <button type="button" class="close" data-dismiss="alert">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        {% else %}
+            <div class="alert alert-success alter-dismissable fade show" role="alert">
+                {{ message }}
+                <button type="button" class="close" data-dismiss="alert">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            {% endif %}
+            {% endfor %}
+        {% endif %}
+        {% endwith%}
+        <section class="header">
+            <nav>
+
+                <a><img src="static/logo.png"></a>
+                <div class="nav-links">
+                    <ul>
+                        <!-- <li><a href="/">Home</a></li> -->
+                        <li><a href="/abc">ABC</a></li>
+                        <li><a href="/lgout">Logout</a></li>
+                        <li><a href="/login">Login</a></li>
+                        <li><a href="/forum">Forum</a></li>
+                        <li><a href="/review">Student Review</a></li>
+                        <li><a href="/quiz">Quiz</a></li>
+                        <li><a href="#bottom">Contact us</a></li>
+
+               <!-- <img src="static/logo.png">
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="ABC.html">ABC</a></li>
+                        <li><a href="t.html">Forum</a></li>
+                        <li><a href="student_feedback.html">Student Review</a></li>
+                        <li><a href="">Contact us</a></li>
+
+                    </ul>
+                </div> -->
+            </nav>
+
+            <div class="text-box">
+                <h1>Welcome to Ai1</h1>
+                <p>A one stop solution for all your Educational needs</p>
+                <a href="#bottom">Know more</a>
+            </div>
+        </section>
+        <section class="footer">
+            <h2>About Us</h2>
+            <p><h5><u>Team Not0</u></h5>
+                <h5>Abhay Joshi, Abhiram H A, Adithya T G, Aditya A S<br>
+                Bengaluru</h5><br>
+                <h6>© 2022, Not0 Pvt. Ltd. All Rights Reserved.</h6>
+            </p>
+            </div>
+            <a href=""><img src="static/instagram.png"></a>&nbsp;
+            <a href=""><img src="static/facebook.png"></a>&nbsp;
+            <a href=""><img src="static/twitter.png"></a>&nbsp;
+            <a href=""><img src="static/linkedin.png"></a>&nbsp;
+        </section>
+    <div id="bottom"></div>
+    </body>
+</html>
